@@ -6,13 +6,14 @@
 
 This application builds a back end for an e-commerce website which helps the managers of the internet retails companies to compete with other e-commerce companies. A working Express.js API is configured to use Sequelize to interact with a MySQL database using the MySQL2 and Sequelize packages. The sensitive data like MYSQL username, password and database name are stored in environment variables using dotenv package and connected to the database using Sequelize. The database contains four models Category, Product, tag and ProductTag. Association methods are executed on Sequelize models to create the following relationships between them:
 
-- Product belongs to Category, as a category can have multiple products but a product can only belong to one category.
+- **Product** belongs to one **Category**, as a category can have multiple products but a product can only belong to one category.
 
-- Category has many Product models.
+- **Category** has many **Product** models.
 
-- Product belongs to many Tag models. Using the ProductTag through model, allow products to have multiple tags and tags to have many products.
+- **Product** belongs to many **Tag** models. 
 
-- Tag belongs to many Product models.
+- **Tag** belongs to many **Product** models.
+- Using the **ProductTag** through model, products and tags are linked which allows products to have multiple tags and tags to have many products.
 
 With the help of API Routes the RESTful CRUD operations are performed using these Sequelize models.
 
@@ -26,17 +27,16 @@ With the help of API Routes the RESTful CRUD operations are performed using thes
   ```
   npm i
   ```
-
 - Create a .env file in the root directory and add the environment variables to hold your MySQL username, password and database name.
 
       DB_NAME='ecommerce_db'
       DB_USER='root'
       DB_PW='password'
 
-- Login into MySQL Server by running the command
+- Login into MySQL by running the command
 
   ```
-  mysql -u root -p
+   mysql -u root -p
   ```
 
 - Run the following command in the shell to create the database.
@@ -59,7 +59,7 @@ The application can be invoked in the terminal by using the following command:
 npm start
 ```
 
-When the application is invoked using 'npm start' then the server will start at port 3001 and the application can be tested in the Insomnia
+When the application is invoked using 'npm start' then the server will start listening on port 3001 and the routes can be tested in the Insomnia.
 
 #### Link to walkthrough video :
 
