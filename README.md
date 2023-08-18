@@ -63,6 +63,8 @@ When the application is invoked using 'npm start' then the server will start lis
 
 #### Link to walkthrough video :
 
+https://drive.google.com/file/d/1duXGPenxdwkMXh-i9iAULnX-Pdb0PF6C/view?usp=sharing
+
 The following images show the application's appearance and functionality :
 
 **GET** route to return all the categories, tags and products being tested in Insomnia Core:
