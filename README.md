@@ -94,3 +94,7 @@ The following images show the application's appearance and functionality :
 https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
 
 https://sequelize.org/docs/v6/core-concepts/model-basics/#default-values
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT) license.
