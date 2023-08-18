@@ -13,6 +13,10 @@ router.get("/", async (req, res) => {
         { model: Tag, through: ProductTag, as: "productTags" },
       ],
     });
+    if (!productData.length) {
+      res.status(404).json({ message: "No products found !" });
+      return;
+    }
     res.status(200).json(productData);
   } catch (err) {
     res.status(500).json(err);
@@ -29,6 +33,10 @@ router.get("/:id", async (req, res) => {
         { model: Tag, through: ProductTag, as: "productTags" },
       ],
     });
+    if (!productData) {
+      res.status(404).json({ message: "No product found with this id!" });
+      return;
+    }
     res.status(200).json(productData);
   } catch (err) {
     res.status(500).json(err);
@@ -75,6 +83,7 @@ router.put("/:id", (req, res) => {
         }).then((productTags) => {
           // create filtered list of new tag_ids
           const productTagIds = productTags.map(({ tagId }) => tagId);
+          console.log(productTagIds);
           const newProductTags = req.body.tagIds
             .filter((tagId) => !productTagIds.includes(tagId))
             .map((tagId) => {

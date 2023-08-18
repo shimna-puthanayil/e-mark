@@ -2,11 +2,11 @@ const { ProductTag } = require("../models");
 
 const productTagData = [
   {
-    productId:1,
+    productId:   1,
     tagId: 6,
   },
   {
-    productId: 1,
+    productId:1,
     tagId: 7,
   },
   {

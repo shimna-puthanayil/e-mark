@@ -65,15 +65,25 @@ When the application is invoked using 'npm start' then the server will start lis
 
 The following images show the application's appearance and functionality :
 
-![LM 1](./public/assets/images/notes.gif)
+**GET** route to return all the categories, tags and products being tested in Insomnia Core:
 
-![LM 1](./public/assets/images/image2.png)
+![LM 1](./assets/images/em1.gif)
 
-![LM 2](./public/assets/images/image3.png)
+**GET** routes to return a single category, a single product, and a single tag being tested in Insomnia Core:
 
-![LM 3](./public/assets/images/image4.png)
+![LM 2](./assets/images/1.gif)
 
-![LM 5](./public/assets/images/image6.png)
+**POST**, **PUT**, and **DELETE** routes for categories being tested in Insomnia Core:
+
+![LM 3](./assets/images/em3.gif)
+
+**POST**, **PUT**, and **DELETE** routes for tags being tested in Insomnia Core:
+
+![LM 4](./assets/images/em4.gif)
+
+**POST**, **PUT**, and **DELETE** routes for products being tested in Insomnia Core:
+
+![LM 5](./assets/images/2.gif)
 
 ## Credits
 

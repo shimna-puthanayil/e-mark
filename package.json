@@ -1,5 +1,5 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "e-mark",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,19 +7,20 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js",
-    "lint": "npx eslint ./**/*.js --quiet",
-    "lint-fix": "npx eslint ./**/*.js --quiet --fix",
+    "lint": "npx eslint \"**/*.js\" --quiet",
+    "lint-fix": "npx eslint \"**/*.js\" --quiet --fix",
     "test": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+    "url": "git+https://github.com/shimna-puthanayil/e-mark.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "eslint": "^7.9.0"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
