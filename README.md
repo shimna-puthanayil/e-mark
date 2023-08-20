@@ -10,7 +10,7 @@ This application builds a back end for an e-commerce website which helps the man
 
 - **Category** has many **Product** models.
 
-- **Product** belongs to many **Tag** models. 
+- **Product** belongs to many **Tag** models.
 
 - **Tag** belongs to many **Product** models.
 - Using the **ProductTag** through model, products and tags are linked which allows products to have multiple tags and tags to have many products.
@@ -27,6 +27,7 @@ With the help of API Routes the RESTful CRUD operations are performed using thes
   ```
   npm i
   ```
+
 - Create a .env file in the root directory and add the environment variables to hold your MySQL username, password and database name.
 
       DB_NAME='ecommerce_db'
@@ -59,7 +60,7 @@ The application can be invoked in the terminal by using the following command:
 npm start
 ```
 
-When the application is invoked using 'npm start' then the server will start listening on port 3001 and the routes can be tested in the Insomnia.
+When the application is invoked using 'npm start' then the server will start listening on port 3001 and the routes can be tested in Insomnia.
 
 #### Link to walkthrough video :
 
